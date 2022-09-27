@@ -200,10 +200,8 @@ function getData(form) {
     redirect: "follow",
   };
   url = "https://uv7cti.deta.dev/port_lead?data=" + data;
-  console.log(url)
   fetch(url, requestOptions)
     .then((response) => response.text())
-    .then((result) => console.log(result))
     .catch((error) => console.log("error", error));
     form.reset();
 }
