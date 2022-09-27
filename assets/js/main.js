@@ -204,6 +204,7 @@ function getData(form) {
     .then((response) => response.text())
     .catch((error) => console.log("error", error));
     form.reset();
+    alert('Datos enviados correctamente');
 }
 
 form.addEventListener("submit", function (event) {
