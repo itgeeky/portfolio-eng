@@ -18,6 +18,7 @@
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 
     <title>Carlos Soto</title>
+    <meta name="description" content="Personal portfolio app - geekyland">
 </head>
 
 <body>
@@ -78,13 +79,13 @@
                 <div class="home__content grid">
                     <div class="home__social">
                         <a href="https://www.linkedin.com/in/carlos-soto-a4906898/" target="_blank"
-                            class="home__social-icon">
+                            class="home__social-icon" aria-label="Linkedin">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
-                        <a href="https://twitter.com/car_aspp" target="_blank" class="home__social-icon">
+                        <a href="https://twitter.com/car_aspp" target="_blank" class="home__social-icon" aria-label="Twitter">
                             <i class="uil uil-twitter-alt"></i>
                         </a>
-                        <a href="https://github.com/itgeeky" target="_blank" class="home__social-icon">
+                        <a href="https://github.com/itgeeky" target="_blank" class="home__social-icon" aria-label="GitHub">
                             <i class="uil uil-github-alt"></i>
                         </a>
                     </div>
@@ -655,21 +656,21 @@
                 <form  id="myForm" class="contact__form">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="name" class="contact__label">Name</label>
-                            <input name="name" type="text" class="contact__input">
+                            <label id="form_name" for="name" class="contact__label">Name</label>
+                            <input name="name" type="text" class="contact__input" aria-labelledby="form_name">
                         </div>
                         <div class="contact__content">
-                            <label for="name" class="contact__label">Email</label>
-                            <input name="mail" type="email" class="contact__input">
+                            <label id="form_email" for="email" class="contact__label">Email</label>
+                            <input name="mail" type="email" class="contact__input" aria-labelledby="form_email">
                         </div>
                     </div>
                     <div class="contact__content">
-                        <label for="text" class="contact__label">Project</label>
-                        <input name="proyect" type="text" class="contact__input">
+                        <label id="form_proyect" for="text" class="contact__label">Project</label>
+                        <input name="proyect" type="text" class="contact__input" aria-labelledby="form_proyect">
                     </div>
                     <div class="contact__content">
-                        <label for="name" class="contact__label">Message</label>
-                        <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <label id="form_message" for="message" class="contact__label">Message</label>
+                        <textarea name="message" id="" cols="0" rows="7" class="contact__input" aria-labelledby="form_message"></textarea>
                     </div>
                     <div>
                         <button type="submit" class="button button--flex">
