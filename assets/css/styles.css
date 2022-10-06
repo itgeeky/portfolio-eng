@@ -713,6 +713,7 @@ img {
 
 .portfolio__img{
     width: 265px;
+    height: 100%;
     border-radius: .5rem;
     justify-self: center;
 }
