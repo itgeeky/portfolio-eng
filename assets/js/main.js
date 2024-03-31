@@ -199,7 +199,7 @@ function getData(form) {
     body: raw,
     redirect: "follow",
   };
-  url = "https://uv7cti.deta.dev/port_lead?data=" + data;
+  url = "https://ses-mail.onrender.com/?data=" + data;
   fetch(url, requestOptions)
     .then((response) => response.text())
     .catch((error) => console.log("error", error));
