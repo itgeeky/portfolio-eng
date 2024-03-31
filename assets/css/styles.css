@@ -818,6 +818,11 @@ img {
 .button--flex{
     cursor: pointer;
 }
+
+#submit-button[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
 /*==================== FOOTER ====================*/
 .footer{
     padding-top: 2rem;

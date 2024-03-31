@@ -188,10 +188,11 @@ themeButton.addEventListener("click", () => {
 
 //send form
 form = document.getElementById("myForm");
+const submitButton = document.getElementById('submit-button');
 
 function getData(form) {
   var formData = new FormData(form);
-  data = JSON.stringify(Object.fromEntries(formData));
+  data = String(JSON.stringify(Object.fromEntries(formData)));
   var raw = "";
 
   var requestOptions = {
@@ -199,7 +200,7 @@ function getData(form) {
     body: raw,
     redirect: "follow",
   };
-  url = "https://ses-mail.onrender.com/?data=" + data;
+  url = "https://ses-mail.onrender.com/ses_mail?data=" + data;
   fetch(url, requestOptions)
     .then((response) => response.text())
     .catch((error) => console.log("error", error));
@@ -210,4 +211,15 @@ function getData(form) {
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   getData(event.target);
+});
+
+form.addEventListener('input', function() {
+  // Check if the form is valid
+  if (form.checkValidity()) {
+      // If the form is valid, remove the 'disabled' attribute from the button
+      submitButton.removeAttribute('disabled');
+  } else {
+      // If the form is not valid, add the 'disabled' attribute to the button
+      submitButton.setAttribute('disabled', '');
+  }
 });

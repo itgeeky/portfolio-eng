@@ -657,11 +657,11 @@
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label id="form_name" for="name" class="contact__label">Name</label>
-                            <input name="name" type="text" class="contact__input" aria-labelledby="form_name">
+                            <input name="name" type="text" class="contact__input" aria-labelledby="form_name" required>
                         </div>
                         <div class="contact__content">
                             <label id="form_email" for="email" class="contact__label">Email</label>
-                            <input name="mail" type="email" class="contact__input" aria-labelledby="form_email">
+                            <input name="mail" type="email" class="contact__input" aria-labelledby="form_email" required>
                         </div>
                     </div>
                     <div class="contact__content">
@@ -670,10 +670,10 @@
                     </div>
                     <div class="contact__content">
                         <label id="form_message" for="message" class="contact__label">Message</label>
-                        <textarea name="message" id="" cols="0" rows="7" class="contact__input" aria-labelledby="form_message"></textarea>
+                        <textarea name="message" id="" cols="0" rows="7" class="contact__input" aria-labelledby="form_message" required></textarea>
                     </div>
                     <div>
-                        <button type="submit" class="button button--flex">
+                        <button type="submit" class="button button--flex" id="submit-button" disabled>
                             Send Message
                             <i class="uil uil-message button__icon"></i>
                         </button>
